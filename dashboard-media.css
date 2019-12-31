@@ -1,3 +1,8 @@
+@media (min-width: 992px) and  (max-width: 1200px){
+ .navbar-toggler{display:block !important}
+ .main-nav{display:none}
+ .navbar-collapse .form-inline,.navbar-nav{display:none !important}
+}
 @media (max-width: 1200px)
 {
  .col-12{
