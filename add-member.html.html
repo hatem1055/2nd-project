@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add member</title>
+        <!--bootstrap cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--chartjs cdn-->
+        <link href="https://github.com/chartjs/Chart.js.git">
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+       <!--google font cdn-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+       <!--hover.css cdn-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+          <link href="add-member.css" rel="stylesheet">
+          <link href="add-member-media.css" rel="stylesheet">
+    </head>
+    <body>
+              <div class="loading">
+                  <div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+                </div>
+        <div class="shadow">
+            
+        </div>
+  <!--start header-->
+        <header>
+       <!--start search nav-->
+        <div class="search-nav">
+            <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand img-fluid" href="#"><img src="http://dreamguys.co.in/demo/dleohr/dleohr/assets/img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#side-nav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class=" fas fa-user navbar-toggler-icon"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 ml-auto hvr-backward">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form>
+        <ul class="navbar-nav ml-auto">
+      <li class="nav-item bag" data-target=".bag-child">
+        <a class="nav-link" href="#"><i class="fas fa-briefcase"></i></a>
+        <div class="bag-child">
+            apply leave
+        </div>
+      </li>
+      <li class="nav-item profile" data-target=".profile-child">
+        <a class="nav-link" href="#"><img src="Avatars/av8.png" class="img-fluid nav-profile"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        </div>
+        <!--end search nav-->
+        <!--start main nav-->
+        <div class="main-nav">
+            <ul>
+            <li class="active"><a href="#"><i class="fas fa-home"></i>dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>             
+            </ul>
+        </div>
+        <!--end main nav-->
+         <!--start side nav-->
+         <div class="side-nav" id="side-nav">
+           <i class="side-nav-closer fas fa-times"></i>
+           <div class="side-nav-header">
+            <img src="Avatars/av8.png" class="img-fluid nav-profile">
+           </div>
+           <div class="side-nav-saerch">
+    <form class="form-inline my-2 my-lg-0 ml-auto side-nav-search-form">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form> 
+           </div>
+           <hr>
+           <div class="side-nav-main">
+                 <ul>
+            <li><a href="#"><i class="fas fa-home"></i>dashboard</a></li>
+            <li class="active"><a href="#"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>profile</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>
+            <li> <a href="#"><i class="fas fa-power-off"></i>logout</a></li>           
+            </ul>
+           </div>
+         </div>
+          <!--end side nav-->
+          <!--end header-->
+        </header>
+        <div class="main-wrapper container-fluid">
+        <div class="row">
+             <!--start fixed side-->
+             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
+               <div class="side col-12 col-6">
+                <div class="side-box home bx-shadow">
+                  <ul>
+                    <li><p><a href="#">home </a> / empyloyees</p></li>
+                    <li><h4>add person</h4></li>
+                  </ul>
+                </div>
+               <div class="side-box side-list bx-shadow">
+                <div class="list-main">
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+    basic details
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">empyloyment</a>
+  <a href="#" class="list-group-item list-group-item-action">teams and offices</a>
+  <a href="#" class="list-group-item list-group-item-action">salary</a>
+</div>
+                </div>
+                </div>
+               </div> 
+               </div>
+              <!--end fixed side-->
+              <div class="col-lg-8 col-xs-12">
+                <div class="row"> 
+            <!--start details-->
+            <div class="col-lg-12 col-xs-12">
+              <div class="details col-12 bx-shadow big-card">
+              <div class="details-header  big-card-header">
+                <i class="fas fa-chevron-down toggler" data-target="details-body"></i>
+                <h5>basic details</h4>
+                <p class="md-p">organized and secure</p>
+              </div>
+              <div class="details-body big-card-body">
+                <hr>
+                <div class="flx details-main">
+                  <div class="input-group input-group1 flx">
+                   <input class="first-name twist-border-yellow" placeholder="first-name">
+                    <input class="second-name twist-border-yellow" placeholder="second-name">  
+                    </div>
+                 <div class="input-group input-group2">
+                    <input class="email twist-border-yellow" placeholder="email">
+                  </div>
+                  <div class="input-group input-group2">
+                    <input class="chek" type="checkbox">
+                    <label>send them an inviite email so they can login immidiaty</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!--end details-->
+            <!--start empyloyyment-->
+          <div class="col-lg-12 col-xs-12">
+              <div class="col-12 bx-shadow big-card">
+               <div class="empyloyment-header  big-card-header">
+                <i class="fas fa-chevron-down toggler" data-target="empyloyment-body"></i>
+                <h5>empyloyment details</h4>
+                <p class="md-p">let every one konows essintials so they are fully prepared</p>
+              </div>
+               <div class="empyloyment-body big-card-body">
+                                <hr>
+               <select class="empyloyment-country twist-border-yellow">
+                <option><span>country1</span></option>
+                <option>country2</option>
+                <option>country3</option>
+                <option>country4</option>
+               </select>
+               <input class="start-date twist-border-yellow" placeholder="start-date">
+               <input class="job-title twist-border-yellow" placeholder="job title">
+               <p>empyloyment type</p>
+               <div class="flx">
+                <input class="chek freelance" type="checkbox" data-check=".parement">
+                    <label>freelancer</label>
+                 <input class="chek parement" type="checkbox" data-check=".freelance">
+                    <label>parement</label>
+               </div>
+               </div>
+              </div>
+            </div>
+                    <!--end empyloyyment-->
+                    <!--start salary-->
+                <div class="col-lg-12 col-xs-12">
+            <div class="bx-shadow salary big-card col-12">
+               <div class="teams-header  big-card-header">
+                <i class="fas fa-chevron-down toggler" data-target="salary-body"></i>
+                <h5>salary details</h4>
+                <p class="md-p">stored securly only visiblefor super admins pyroll supervisors</p>
+              </div>
+               <div class="salary-body big-card-body">
+                <div class="salary-main flx">
+                                                <hr>
+               <select class="currency twist-border-yellow">
+                <option>currency</option>
+                <option>dollar</option>
+                <option>pound </option>
+                <option> uero</option>
+               </select>
+               <input class="start-date twist-border-yellow" placeholder="start date">
+               <select class="frequancy twist-border-yellow">
+                <option>frequancy</option>
+                <option>monthky</option>
+                <option>weakly</option>
+                <option>daily</option>
+               </select>
+               <input class="amount twist-border-yellow" placeholder="amount">  
+                </div>
+               </div>
+               </div> 
+                </div>
+                <!--end salary-->
+                    <!--start teams-->
+          <div class="col-lg-12 col-xs-12">
+            <div class="bx-shadow vacs big-card col-12">
+               <div class="teams-header  big-card-header">
+                <i class="fas fa-chevron-down toggler" data-target="teams-body"></i>
+                <h5>teams and offices</h4>
+                <p class="md-p">keep things tidy-save time setting aprovers and holdays</p>
+              </div>
+               <div class="teams-body big-card-body flx">
+                                <hr>
+               <select class="teams-country twist-border-yellow">
+                <option>teams</option>
+                <option>php</option>
+                <option>testing</option>
+                <option>design</option>
+               </select>
+               <select class="empyloyment-country twist-border-yellow">
+                <option>line managment</option>
+                <option>maria cotton</option>
+                <option>danny ward</option>
+                <option>welly wolson</option>
+               </select>
+               <select class="empyloyment-country twist-border-yellow">
+                <option>office name</option>
+                <option>focus name</option>
+                <option>focus technolgy</option>
+               </select>
+               </div>
+               </div>
+          </div>
+                <!--end teams-->
+                <!--start submit -->
+                          <div class="col-lg-12 col-xs-12 text-center">
+       <button class="btn btn-warning hvr-bounce-to-bottom styled-btn"> add team member</button>
+          
+                          </div>
+               <!--end submit -->
+        </div>
+        </div>  
+        </div>
+          
+                    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src = "add-member.js"></script>
+    </body>
+</html>
