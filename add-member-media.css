@@ -5,6 +5,11 @@
 }
 @media (max-width: 1200px)
 {
+  .side{
+  position:relative !important;
+  margin-top:0 !important;
+  width:auto !important; 
+ }
  .col-12{
 left: auto;
     right: auto;
