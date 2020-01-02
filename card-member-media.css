@@ -1,0 +1,100 @@
+@media (min-width: 992px) and  (max-width: 1200px){
+ .navbar-toggler{display:block !important}
+ .main-nav{display:none}
+ .navbar-collapse .form-inline,.navbar-nav{display:none !important}
+}
+@media (max-width: 1200px)
+{
+ .col-12{
+left: auto;
+    right: auto;
+    margin-left: 37px;
+    margin-right: 0;
+    width: 90%; 
+ }
+  .navbar-brand{
+position: absolute;
+    left: 0;
+    top: -15px;
+  }
+header .navbar-toggler{
+ position:absolute;
+ right:-13px;
+top: 0;
+}
+header{
+ height:auto;
+ width: 104%;
+}
+.side{
+ margin-left:20px; 
+}
+.side-box{
+ width:100%;
+ margin-right:54px; 
+}
+.search-nav {
+    padding-bottom: 32px;
+}
+ .anchor-btn {
+       margin-right: -32px;
+    margin-left: 1px;
+}
+}
+@media(max-width:973px){
+ .main-nav{
+  display:none;
+ }
+}
+@media(max-width:565px){
+  header .fa-search {
+    top: 10%;
+ }
+ .search-nav .navbar-brand img {
+    width: 127px;
+}
+.side-nav .search-input{
+ width:192px;
+}
+.first-name{
+ margin-right:0;
+ margin-bottom:10px; 
+}
+}
+@media(max-width:356px){
+  .col-12{
+left: auto;
+    right: auto;
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 90%; 
+ }
+ header .fa-search {
+    top: 10%;
+ }
+ .search-nav .navbar-brand img {
+    width: 127px;
+}
+.side-nav .search-input{
+ width:192px;
+}
+ .anchor-btn,.anchor-btn i{
+  font-size:14px; 
+ }
+ .heading h6{
+  display:none;
+ }
+ .heading{
+  padding:40px; 
+ }
+ .member h6{
+  display:block;
+  font-size:18px; 
+ }
+ .member .sm-p{
+  font-size: 9px;
+ }
+ .member .normal-p {
+    font-size: 11px;
+}
+}

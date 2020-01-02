@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>empyloyees</title>
+        <!--bootstrap cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--chartjs cdn-->
+        <link href="https://github.com/chartjs/Chart.js.git">
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+       <!--google font cdn-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+       <!--hover.css cdn-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+          <link href="card-member.css" rel="stylesheet">
+          <link href="card-member-media.css" rel="stylesheet">
+    </head>
+    <body>
+              <div class="loading">
+                  <div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+                </div>
+        <div class="shadow">
+            
+        </div>
+  <!--start header-->
+        <header>
+       <!--start search nav-->
+        <div class="search-nav">
+            <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand img-fluid" href="#"><img src="http://dreamguys.co.in/demo/dleohr/dleohr/assets/img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#side-nav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class=" fas fa-user navbar-toggler-icon"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 ml-auto hvr-backward">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form>
+        <ul class="navbar-nav ml-auto">
+      <li class="nav-item bag" data-target=".bag-child">
+        <a class="nav-link" href="#"><i class="fas fa-briefcase"></i></a>
+        <div class="bag-child">
+            apply leave
+        </div>
+      </li>
+      <li class="nav-item profile" data-target=".profile-child">
+        <a class="nav-link" href="#"><img src="Avatars/av8.png" class="img-fluid nav-profile"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        </div>
+        <!--end search nav-->
+        <!--start main nav-->
+        <div class="main-nav">
+            <ul>
+<li><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/dashboard/dashboard.html"><i class="fas fa-home"></i>dashboard</a></li>
+            <li class="active"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>             
+            </ul>
+        </div>
+        <!--end main nav-->
+         <!--start side nav-->
+         <div class="side-nav" id="side-nav">
+           <i class="side-nav-closer fas fa-times"></i>
+           <div class="side-nav-header">
+            <img src="Avatars/av8.png" class="img-fluid nav-profile">
+           </div>
+           <div class="side-nav-saerch">
+    <form class="form-inline my-2 my-lg-0 ml-auto side-nav-search-form">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form> 
+           </div>
+           <hr>
+           <div class="side-nav-main">
+                 <ul>
+            <li><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/dashboard/dashboard.html"><i class="fas fa-home"></i>dashboard</a></li>
+            <li class="active"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>profile</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>
+            <li> <a href="#"><i class="fas fa-power-off"></i>logout</a></li>           
+            </ul>
+           </div>
+         </div>
+          <!--end side nav-->
+          <!--end header-->
+        </header>
+        <div class="main-wrapper container-fluid">
+        <div class="row">
+             <!--start fixed side-->
+             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
+               <div class="side col-12 col-6">
+                <div class="side-box home bx-shadow">
+                  <ul>
+                    <li><p><a href="#">home </a> / empyloyees</p></li>
+                    <li><h4>add person</h4></li>
+                  </ul>
+                </div>
+               <div class="side-box empyloy-toggler bx-shadow">
+                <div class="toggle-main">
+                 <button class="btn active hvr-sweep-to-left"><a href="#" align="center">all</a></button>
+                  <button class="btn hvr-sweep-to-left"><a href="#" align="center">teams</a></button>
+                  <button class="btn hvr-sweep-to-left"><a href="#" align="center">offices</a></button>
+                </div>
+                </div>
+               </div> 
+               </div>
+              <!--end fixed side-->
+              <div class="col-lg-8 col-xs-12">
+                <div class="row"> 
+            <!--start heading-->
+            <div class="col-lg-12 col-xs-12">
+              <div class="big-card bx-shadow heading col-12">
+                            <div class="flx right">
+                <a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html"><i class="fas fa-th text-warning"></i></a>
+                <a href="#"><i class="fas fa-list vilot twist-to-yellow color-twist"></i></a>
+                       <div class="col-lg-12 col-xs-12 text-center">
+       <a class="btn btn-warning hvr-bounce-to-bottom styled-btn anchor-btn" href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/add%20member/add-member.html.html">
+   <i class="fas fa-plus"></i>  add person</a>
+                          </div>
+              </div>
+              <h6>7 members</h6> 
+              </div>
+            </div>
+            <!--end heading-->
+            <!--start members-->
+          <div class="col-lg-12 col-xs-12">
+            <div class="big-card bx-shadow heading col-12">
+              <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av8.png">
+                   <h6 class="vilot">maria cotton</h6>
+                   <p class="normal-p">php team lead</p>
+                   <p class="sm-p">mariacotton@example.com</p>
+                  </div>
+                </div>
+                 <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av6.png">
+                   <h6 class="vilot">danny ward</h6>
+                   <p class="normal-p">desigining team lead</p>
+                   <p class="sm-p">dannyward@example.com</p>
+                  </div>
+                </div>
+              <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av1.png">
+                   <h6 class="vilot">linda craver</h6>
+                   <p class="normal-p">ios team lead</p>
+                   <p class="sm-p">lindacraver@example.com</p>
+                  </div>
+                </div>
+               <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av2.png">
+                   <h6 class="vilot">jenny sims</h6>
+                   <p class="normal-p">android team lead</p>
+                   <p class="sm-p">jennysims@example.com</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av5.png">
+                   <h6 class="vilot">john gibs</h6>
+                   <p class="normal-p">buisnes team lead</p>
+                   <p class="sm-p">johngibs@example.com</p>
+                  </div>
+                </div>
+               <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av7.png">
+                   <h6 class="vilot">stacey linville</h6>
+                   <p class="normal-p">testing team lead</p>
+                   <p class="sm-p">staceylinville@example.com</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av14.png">
+                   <h6 class="vilot">richard wilson</h6>
+                   <p class="normal-p">operation manager</p>
+                   <p class="sm-p">rechardwilson@example.com</p>
+                  </div>
+                </div>
+               <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av13.png">
+                   <h6 class="vilot">danial grifing</h6>
+                   <p class="normal-p">designing team</p>
+                   <p class="sm-p">danialgrifing@example.com</p>
+                  </div>
+                </div>
+             <div class="col-lg-4 col-xs-12">
+                  <div class="col-12 member text-center">
+                   <img class="img-fluid styled-img" src="avatars/av9.png">
+                   <h6 class="vilot">michale fairfax</h6>
+                   <p class="normal-p">php team</p>
+                   <p class="sm-p">michalefairfax@example.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+                    <!--end membrs-->
+                <!--start submit --
+               <!--end submit -->
+        </div>
+        </div>  
+        </div>
+          
+                    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src = "card-member.js"></script>
+    </body>
+</html>
