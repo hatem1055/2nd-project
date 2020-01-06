@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>empyloyees</title>
+        <!--bootstrap cdn-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--chartjs cdn-->
+        <link href="https://github.com/chartjs/Chart.js.git">
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+       <!--google font cdn-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+       <!--hover.css cdn-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+          <link href="teams.css" rel="stylesheet">
+          <link href="teams-media.css" rel="stylesheet">
+    </head>
+    <body>
+              <div class="loading">
+                  <div class="spinner-border text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+                </div>
+        <div class="shadow">
+            
+        </div>
+  <!--start header-->
+        <header>
+       <!--start search nav-->
+        <div class="search-nav">
+            <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand img-fluid" href="#"><img src="http://dreamguys.co.in/demo/dleohr/dleohr/assets/img/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#side-nav" aria-controls="side-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class=" fas fa-user navbar-toggler-icon"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 ml-auto hvr-backward">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form>
+        <ul class="navbar-nav ml-auto">
+      <li class="nav-item bag" data-target=".bag-child">
+        <a class="nav-link" href="#"><i class="fas fa-briefcase"></i></a>
+        <div class="bag-child">
+            apply leave
+        </div>
+      </li>
+      <li class="nav-item profile" data-target=".profile-child">
+        <a class="nav-link" href="#"><img src="Avatars/av8.png" class="img-fluid nav-profile"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        </div>
+        <!--end search nav-->
+        <!--start main nav-->
+        <div class="main-nav">
+            <ul>
+<li><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/dashboard/dashboard.html"><i class="fas fa-home"></i>dashboard</a></li>
+            <li class="active"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>             
+            </ul>
+        </div>
+        <!--end main nav-->
+         <!--start side nav-->
+         <div class="side-nav" id="side-nav">
+           <i class="side-nav-closer fas fa-times"></i>
+           <div class="side-nav-header">
+            <img src="Avatars/av8.png" class="img-fluid nav-profile">
+           </div>
+           <div class="side-nav-saerch">
+    <form class="form-inline my-2 my-lg-0 ml-auto side-nav-search-form">
+      <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search here" aria-label="Search">
+      <i class="fas fa-search my-2 my-sm-0"></i>
+    </form> 
+           </div>
+           <hr>
+           <div class="side-nav-main">
+                 <ul>
+            <li><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/dashboard/dashboard.html"><i class="fas fa-home"></i>dashboard</a></li>
+            <li class="active"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html"><i class="fas fa-user-friends"></i>emeloyyes</a></li>
+            <li><a href="#"><i class="fas fa-building"></i>company</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i>celender</a></li>
+            <li><a href="#"><i class="fas fa-sync"></i>leave</a></li>
+            <li><a href="#"><i class="fas fa-star"></i>reviews</a></li>
+            <li><a href="#"><i class="fas fa-rocket"></i>reports</a></li>
+            <li><a href="#"><i class="fas fa-car"></i>manage</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>profile</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>settings</a></li>
+            <li> <a href="#"><i class="fas fa-power-off"></i>logout</a></li>           
+            </ul>
+           </div>
+         </div>
+          <!--end side nav-->
+          <!--end header-->
+        </header>
+        <div class="main-wrapper container-fluid">
+        <div class="row">
+             <!--start fixed side-->
+             <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12">
+               <div class="side col-12 col-6">
+                <div class="side-box home bx-shadow">
+                  <ul>
+                    <li><p><a href="#">home </a> / empyloyees</p></li>
+                    <li><h4>add person</h4></li>
+                  </ul>
+                </div>
+               <div class="side-box empyloy-toggler bx-shadow">
+                <div class="toggle-main">
+                 <button class="btn  hvr-sweep-to-left"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/empyloee%20main/card%20member/card-member.html.html" align="center">empyloyees</a></button>
+                  <button class="btn active hvr-sweep-to-left"><a href="file:///D:/important/my%20projects/my%20portofulio/2nd%20project/emplyees/teams/teams.html" align="center">teams</a></button>
+                </div>
+                </div>
+               </div> 
+               </div>
+              <!--end fixed side-->
+              <div class="col-lg-8 col-xs-12">
+                <div class="row main-row"> 
+            <!--start heading-->
+            <div class="col-lg-12 col-xs-12">
+              <div class="big-card bx-shadow heading col-12">
+                            <div class="flx right">
+                       <div class="col-lg-12 col-xs-12 text-center">
+       <a class="btn btn-warning hvr-bounce-to-bottom styled-btn anchor-btn" href="" data-toggle="modal" data-target="#add-team-modal"><!--popup-->
+   <i class="fas fa-plus"></i>  add team</a>
+                          </div>
+              </div>
+              <h6 class="member-count">6 teams</h6> 
+              </div>
+            </div>
+            <!--end heading-->
+            <!--start teams-->
+          <div class="col-lg-6 col-xs-12 php">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team php-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".php-body" data-name=".php-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".php"data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>php</h6>
+                                <hr>
+              </div>
+              <div class="team-body php-body">
+                <div class="maria">
+                  <i class="fas fa-trash btn btn-warning right member-remover"></i>
+            <img src="avatars/av8.png" class="styled-img">
+             <p class="md-p inline" style="color:black;">maria cotton</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 design">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team design-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".design-body" data-name=".design-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".design" data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>design</h6>
+                                <hr>
+              </div>
+              <div class="team-body design-body">
+             <div class="danny">
+              <i class="fas fa-trash btn btn-warning right member-remover"></i>
+             <img src="avatars/av6.png" class="styled-img">
+             <p  class="md-p inline" style="color:black;">danny ward</p>
+             </div>
+              </div>
+            </div>
+            </div>
+            </div>
+           <div class="col-lg-6 col-xs-12 ios">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team ios-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".ios-body" data-name=".ios-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".ios" data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>ios</h6>
+                                <hr>
+              </div>
+              <div class="team-body ios-body">
+             <div class="member">
+              <i class="fas fa-trash btn btn-warning right member-remover"></i>
+             <img src="avatars/av1.png" class="styled-img">
+             <p  class="md-p inline" style="color:black;">linda carver</p>
+             </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 android">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team android-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".android-body" data-name=".android-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".android" data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>android</h6>
+                                <hr>
+              </div>
+              <div class="team-body android-body">
+             <div class="member">
+              <i class="fas fa-trash btn btn-warning right member-remover"></i>
+             <img src="avatars/av2.png" class="styled-img">
+             <p  class="md-p inline" style="color:black;">jenny simms</p>
+             </div>
+              </div>
+            </div>
+            </div>
+            </div>
+             <div class="col-lg-6 col-xs-12 buisness">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team buisness-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".buisness-body" data-name=".buisness-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".buisness" data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>buisness</h6>
+                                <hr>
+              </div>
+              <div class="team-body buisness-body">
+             <div class="member">
+              <i class="fas fa-trash btn btn-warning right member-remover"></i>
+             <img src="avatars/av5.png" class="styled-img">
+             <p  class="md-p inline" style="color:black;">john gibbs</p>
+             </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 testing">
+            <div class="big-card bx-shadow  team col-12">
+            <div class="team testing-team">
+              <div class="team-header">
+                <div class="right">
+                  <i class="fas fa-pen btn btn-warning edit-btn" data-toggle="modal" data-target="#edit-modal" data-edit=".testing-body" data-name=".testing-team .team-header h6"></i>
+                  <i class="fas fa-trash btn btn-warning" data-remove=".testing" data-toggle="modal" data-target="#remove-modal"></i>
+                </div>
+                <h6>testing</h6>
+                                <hr>
+              </div>
+              <div class="team-body testing-body">
+             <div class="member">
+              <i class="fas fa-trash btn btn-warning right member-remover"></i>
+             <img src="avatars/av7.png" class="styled-img">
+             <p  class="md-p inline" style="color:black;">stacey linville</p>
+             </div>
+              </div>
+            </div>
+            </div>
+            </div>
+                    <!--end teams-->
+        </div>
+        </div>  
+        </div>
+         <!--start popups -->
+                <!--team remover-->
+
+<!-- Modal -->
+<div class="modal fade" id="remove-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        are you sure want to delete?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger remover-closer" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning remover">delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--edit-popup-->
+<div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5>change team name</h5>
+        <input class="team-name" placeholder="type the new name" type="text" value="">
+        <h5>add member</h5>
+<div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          new member name
+        </a>
+        <!--dropdown items-->
+        <div class="dropdown-menu member-name-dropdown" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" data-name="maria cotton" data-src="avatars/av8.png" data-class="maria">maria cotton</a>
+          <a class="dropdown-item" href="#" data-name="danny ward" data-src="avatars/av6.png" data-class="danny">danny ward</a>
+          <a class="dropdown-item" href="#" data-name="john gibss" data-src="avatars/av5.png" data-class="john">john gibss</a>
+          <a class="dropdown-item" href="#" data-name="linda craver" data-src="avatars/av1.png" data-class="john">linda craver</a>
+          <a class="dropdown-item" href="#" data-name="jenny sims" data-src="avatars/av2.png" data-class="john">jenny sims</a>
+          <a class="dropdown-item" href="#" data-name="michale fairfax" data-src="avatars/av9.png" data-class="john">michale fairfax</a>
+          <a class="dropdown-item" href="#" data-name="stacey linvile" data-src="avatars/av7.png" data-class="john">stacey linville</a>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger editor-closer" data-dismiss="modal">cancel</button>
+        <button type="button" class="btn btn-warning editor" data-name="" data-src="" data-selector="" data-title="" >save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--add team popup-->
+<div class="modal fade" id="add-team-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5>team name</h5>
+        <input class="new-team-name" placeholder="type the new name" type="text" value="">
+        <h5>add member</h5>
+<div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          first member name
+        </a>
+        <!--dropdown items-->
+        <div class="dropdown-menu new-member-name-dropdown" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" data-name="maria cotton" data-src="avatars/av8.png" data-class="maria">maria cotton</a>
+          <a class="dropdown-item" href="#" data-name="danny ward" data-src="avatars/av6.png" data-class="danny">danny ward</a>
+          <a class="dropdown-item" href="#" data-name="john gibss" data-src="avatars/av5.png" data-class="john">john gibss</a>
+          <a class="dropdown-item" href="#" data-name="linda craver" data-src="avatars/av1.png" data-class="john">linda craver</a>
+          <a class="dropdown-item" href="#" data-name="jenny sims" data-src="avatars/av2.png" data-class="john">jenny sims</a>
+          <a class="dropdown-item" href="#" data-name="michale fairfax" data-src="avatars/av9.png" data-class="john">michale fairfax</a>
+          <a class="dropdown-item" href="#" data-name="stacey linvile" data-src="avatars/av7.png" data-class="john">stacey linville</a>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger adding-closer" data-dismiss="modal">cancel</button>
+        <button type="button" class="btn btn-warning adding-btn" data-name="" data-src="" data-title="" >save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--warning popup-->
+<button data-target="#warning-modal" data-toggle="modal" class="warning-opener"style="opacity:0;"></button>
+<div class="modal fade" id="warning-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+       <p class="warning-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary remover-closer" data-dismiss="modal">ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+               <!--end popups -->
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+                    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src = "teams.js"></script>
+    </body>
+</html>
