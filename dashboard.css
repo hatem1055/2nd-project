@@ -79,7 +79,7 @@ header{
 .navbar-brand img:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);}
 header .navbar-expand-lg{padding-left:20px;}
  header .navbar-nav{margin-left: 0 !important;}
-header .fa-search{  right: 10%; top: 30%;}
+header .fa-search{  right: 10%; top: 30%;     position: absolute;}
 header .search-input{
     border-color: rgba(150, 148, 148, 0.9);
     width: 245px;
@@ -326,8 +326,8 @@ margin-top: 14px;
 .shadow,.side-nav,.side-nav-header,.side-nav-closer{
 top:0;
 }
-header,.employ .icon{
-background-color:#3E007C;
+header,.employ .icon,.side-nav-saerch .search-input{
+background-color:#3E007C !important;
 }
 header,header .navbar-expand-lg,.box .icon{
 padding:20px;
@@ -335,7 +335,7 @@ padding:20px;
 header .navbar-expand-lg,header .search-input{
  background: none !important;
 }
-header .navbar-expand-lg,header .fa-search,header .fa-user,.profile-child ul li
+header .navbar-expand-lg,header .fa-search,.search-nav .fa-user,.profile-child ul li
 ,.search-input::placeholder,.fa-briefcase,.bag,.bag-child,.main-nav .active,.dashboard-toggler .active-dashboard a,
 .main-nav .active a,.main-nav .active i,.box i,.side-nav-closer{
 color: white !important;
